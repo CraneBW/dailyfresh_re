@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title></title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <!-- Media -->
+<table><tr><td/><td>"userId": 1 \}</td></tr><tr><td>接口描述</td><td>管理员进行删除指定用户的操作</td></tr><tr><td>响应数据</td><td>\{ "msg": "操作成功", "code": 200 \}</td></tr></table>
+<!-- Media -->
+<p>此接口实现的功能是删除指定用户, 根据前端传入的用户 Id 找到对应用户并进行删除操作, 主要应用在店铺值班人员发现某用户行为极为恶劣的情况, 管理员可以直接删除该账号, 在后续迭代中可以记录该账号注册所需的手机号并一并进行拉黑操作。</p>
+<p>表 8 用户接口-修改用户信息</p>
+<!-- Media -->
+<table><tr><td>接口名</td><td colspan="3">修改用户信息</td></tr><tr><td>请求方法</td><td>PUT</td><td>请求数据类型</td><td>JSON</td></tr><tr><td>接口 URL</td><td colspan="3">http://124.71.194.156:8080/user/update</td></tr><tr><td>请求体</td><td colspan="3">\{ "userId": 4, "userName":"zrj", "userPassword":"123456", "userPrivilege":0 \}</td></tr><tr><td>接口描述</td><td colspan="3">管理员进行修改指定用户的用户名, 密码和权限的操作</td></tr><tr><td>响应数据</td><td colspan="3">操作成功返回: \{ "msg": "操作成功", "code": 200 \} 用户名重复返回: \{ "msg": "用户名重复", "code": 500 \}</td></tr></table>
+<!-- Media -->
+<p>此接口实现的功能是管理员在管理员界面修改指定用户的信息,前端可选择传入该用户用户名, 密码, 权据, 后端只根据用户 Id 修改前端传入的数据, 如果未传入则保持原先数据值。主要应用在可以修改账号权限, 新增或减少管理员数量; 如果用户忘记密码也可以委托管理员进行修改。</p>
+<!-- Media -->
+<p>表 9 用户接口-用户登录</p>
+<table><tr><td>接口名</td><td colspan="3">用户登录</td></tr><tr><td>请求方法</td><td>POST</td><td>请求数据类型</td><td>JSON</td></tr><tr><td>接口 URL</td><td colspan="3">http://124.71.194.156:8080/user/login</td></tr><tr><td>请求体</td><td colspan="3">\{ "userAccount": "zrj2003", "userPassword": "123456" \}</td></tr><tr><td>接口描述</td><td colspan="3">用户进行登录操作</td></tr></table>
+            
+            
+        </body>
+        </html>

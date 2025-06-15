@@ -101,6 +101,7 @@ class IndexTypeGoodsBanner(BaseModel):
 
 class IndexPromotionBanner(BaseModel):
     '''首页促销活动模型类'''
+    # todo : 这一部分暂时不做 只在首页用下
     name = models.CharField(max_length=20, verbose_name='活动名称')
     url = models.CharField(max_length=256, verbose_name='活动链接')
     image = models.ImageField(upload_to='banner', verbose_name='活动图片')

@@ -3846,3 +3846,22 @@ spawned uWSGI worker 1 (pid: 3329, cores: 2)
 spawned uWSGI worker 2 (pid: 3330, cores: 2)
 spawned uWSGI worker 3 (pid: 3332, cores: 2)
 spawned uWSGI worker 4 (pid: 3335, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May  7 11:27:26 2025] ***
+compiled with version: 9.4.0 on 24 March 2025 06:40:17
+os: Linux-5.15.167 #1 SMP Wed Nov 27 13:59:20 CST 2024
+nodename: BW
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/crane/PycharmProjects/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/crane/PycharmProjects/fruits-and-vegetables/.venv/bin/uwsgi
+chdir() to /home/crane/PycharmProjects/fruits-and-vegetables/dailyfresh
+your processes number limit is 28036
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8080).
+bind(): Address already in use [core/socket.c line 769]
